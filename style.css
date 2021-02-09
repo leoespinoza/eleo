@@ -322,7 +322,7 @@ html ::selection {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url('http://reykjavik.content/cnt/iceland.jpg');
+  /* background-image: url('https://4.bp.blogspot.com/-4ogpal67mQk/UCaet27p1KI/AAAAAAAAEqg/T5sPWFExXZk/s1600/Torres+del+Paine+Rio+Serrano+Chile-429500.jpg'); */
   background-size: cover;
   background-position: center;
   transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
