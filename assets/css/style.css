@@ -39,6 +39,7 @@ html ::selection {
   background: #777;
   color: #777;
 }
+
 .site .content {
   position: absolute;
   top: 50%;
