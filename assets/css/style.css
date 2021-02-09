@@ -454,17 +454,19 @@ html ::selection {
 @media (max-width: 320px) and (max-height: 570px) {
   .site .content h1 {
     font-family: 'Oswald', sans-serif;
+    font-size: 40px;
     /* font-weight: 400;
     font-size: 40px;
     line-height: 47.6px;
     letter-spacing: -1px; */
   }
-  /* .site .content p {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0px;
+  .site .content p {
+    /* font-family: Montserrat, sans-serif;
+    font-weight: 400; */
+    font-size: 3vw;
+    line-height: 4vw;
+
+    /* letter-spacing: 0px; */
   } */
   .site .info {
     left: -248px;
