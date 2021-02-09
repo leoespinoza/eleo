@@ -94,8 +94,8 @@ html ::selection {
   margin: 0 0 48px 9px;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  font-size: 10vwp;
-  line-height: 26px;
+  font-size: 1.6vw;
+  line-height: 2.2vw;
   letter-spacing: 0px;
   opacity: 0;
 }
