@@ -95,8 +95,8 @@ html ::selection {
   margin: 0 0 48px 9px;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-    font-size: 3vw;
-    line-height: 4vw;
+  font-size: 1.5vw;
+  line-height: 2.3vw;
   letter-spacing: 0px;
   opacity: 0;
 }
@@ -419,7 +419,7 @@ html ::selection {
     max-width: inherit;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    /* font-size: 48px; */
+     font-size: 13vw;
     line-height: 57.12px;
     letter-spacing: -2px;
   }
@@ -428,7 +428,8 @@ html ::selection {
     margin-bottom: 32px;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
-    /* font-size: 13px; */
+    font-size: 3vw;
+    line-height: 4vw;
     line-height: 21.125px;
     letter-spacing: 0px;
   }
@@ -451,7 +452,7 @@ html ::selection {
     padding: 0 20px;
   }
 
-    .site .content p {
+   .site .content p {
     /* font-family: Montserrat, sans-serif;
     font-weight: 400; */
     font-size: 3vw;
