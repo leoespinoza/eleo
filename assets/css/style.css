@@ -78,7 +78,7 @@ html ::selection {
   opacity: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 20vw;
+  font-size: 10vw;
   line-height: 110px;
   letter-spacing: -5px;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ html ::selection {
     max-width: 620px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 96px;
+    /* font-size: 96px; */
     line-height: 114.24px;
     letter-spacing: -4px;
   }
@@ -373,7 +373,7 @@ html ::selection {
     margin: 0 0 38px 7px;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 22.75px;
     letter-spacing: 0px;
   }
@@ -418,7 +418,7 @@ html ::selection {
     max-width: inherit;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 48px;
+    /* font-size: 48px; */
     line-height: 57.12px;
     letter-spacing: -2px;
   }
@@ -427,7 +427,7 @@ html ::selection {
     margin-bottom: 32px;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    /* font-size: 13px; */
     line-height: 21.125px;
     letter-spacing: 0px;
   }
