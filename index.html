@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Complete source of http://Reykjavik.Rocks</title>
+  <title>CodePen - Vimeo Full Screen Video Background</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -11,9 +11,9 @@
 <div class="site">
   <div class="content">
     <h2>Reykjavik Rocks</h2>
-    <h1>Your Luxury Agent in Iceland</h1>
-    <p>We deliver high end, customized luxury. Complete tailored experience for Iceland whether it is rejuvenation and relaxation, a family trip, a romantic break for a couple, an individual only or a party experience – we can cater to your every need.</p>
-    <button>About us</button><button>Contact us</button>	
+    <h1 class="lang" data-ref="title">Hola, soy Leo</h1>
+    <p class="lang" data-ref="presentation">Consultor y creador de aplicaciones independiente con sede en Chile, que ha desarrollado, lanzado y mantenido proyectos desde cero en una amplia gama de plataformas y lenguajes, incursionando en los ultimos años en soluciones de IA (Inteligencia Artificial)</p>
+    <button class="lang" data-ref="about">About us</button><button class="lang" data-ref="contact">Contact us</button>	
   </div>
   <div class="info">
     <i><span></span></i>
@@ -32,11 +32,15 @@
   </div>
   <div class="cover"></div>
   <div class="tv">
-    <div class="screen" id="tv"></div>
+    <iframe id="iframeID" src="#"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<!-- partial:index.partial.html -->
 
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
