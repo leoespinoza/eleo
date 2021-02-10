@@ -19,7 +19,7 @@ function changeLang(){
   $(document).on('ready', function(){
 
     //if (mobCheck){
-      $('.tv .screen, .cover').addClass('on');
+      // $('.tv .screen, .cover').addClass('on');
     //}
 
     $('button').on('click', function(e){
