@@ -31,7 +31,7 @@ function changeLang() {
 
 $(document).on('ready', function () {
   //if (mobCheck){
-  // $('.tv .screen, .cover').addClass('on');
+  // 
   //}
   $('button').on('click', function (e) {
     e.stopPropagation();
@@ -53,6 +53,7 @@ $(document).on('ready', function () {
   $('html, .info > i').on('click', function () {
     $('button, .content, .info, .tv, .about-us, .contact-us').removeClass('on');
   });
+  $('.tv .screen, .cover').addClass('on');
   $('.content').children().addClass('show');
 });
 $(window).on('load', function () {
