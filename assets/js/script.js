@@ -47,7 +47,7 @@ function changeLang(){
       $('button, .content, .info, .tv, .about-us, .contact-us').removeClass('on');
     });
 
-    // $('.content').children().addClass('show');
+    $('.content').children().addClass('show');
   });
 
 
