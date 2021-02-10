@@ -504,7 +504,7 @@ html ::selection {
    z-index: -1;
    pointer-events: none;
    overflow: hidden;
-  background-image: url('assets/img/cover1.jpg'); 
+  background-image: url('/assets/img/cover1.jpg'); 
   background-size: cover;
   background-position: center;
   transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
