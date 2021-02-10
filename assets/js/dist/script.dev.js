@@ -11,7 +11,7 @@ var arr = [{
 }, {
   name: "Chile | Patagonia, Torres del Paine",
   id: "260017598",
-  time: "14s"
+  time: "15s"
 }, {
   name: "South Pole | Antarctica",
   id: "389572529",
@@ -30,22 +30,6 @@ function changeVideo() {
 function changeLang() {
   $(".contenido").each(function (index) {
     $(this).text($(this).data(lang));
-  });
-}
-
-function removeElement(target) {
-  target.animate({
-    opacity: "-=1"
-  }, 3000, function () {
-    target.remove();
-  });
-}
-
-function showElement(target) {
-  target.animate({
-    opacity: "-=1"
-  }, 3000, function () {
-    target.remove();
   });
 }
 
@@ -75,6 +59,13 @@ $(document).on('ready', function () {
   }); //$('.tv .screen, .cover').addClass('on');
 
   $('.content').children().addClass('show');
+  removeElement($('.tv'));
+  $('.tv').animate({
+    opacity: 0
+  }, 4000);
+  $('iframe').animate({
+    opacity: 1
+  }, 3000);
 });
 $(window).on('load', function () {
   //  $('.content').children().addClass('show');

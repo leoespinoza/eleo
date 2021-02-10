@@ -1,6 +1,6 @@
 let arr = [{name:"Chile | Atacama Desert",id:"384372134", time:"15s"}, 
           {name:"Chile | Los Lagos to Atacama",id:"355317435", time:"0s"},  
-          {name:"Chile | Patagonia, Torres del Paine",id:"260017598", time:"14s"},
+          {name:"Chile | Patagonia, Torres del Paine",id:"260017598", time:"15s"},
           {name:"South Pole | Antarctica",id:"389572529", time:"11s"}]; 
 let APP_LANG = {
     spanish: "es",
@@ -19,20 +19,7 @@ function changeLang(){
     });
 }
 
-function removeElement(target) {
-  target.animate({
-    opacity: "-=1"
-  }, 3000, function() {
-    target.remove();
-  });
-}
-function showElement(target) {
-  target.animate({
-    opacity: "-=1"
-  }, 3000, function() {
-    target.remove();
-  });
-}
+
 
   $(document).on('ready', function(){
 
@@ -66,6 +53,10 @@ function showElement(target) {
     });
     //$('.tv .screen, .cover').addClass('on');
     $('.content').children().addClass('show');
+    removeElement($('.tv'));
+
+    $('.tv').animate({opacity: 0}, 4000);
+    $('iframe').animate({opacity: 1}, 3000);
   });
 
 
