@@ -76,7 +76,7 @@ function vidRescale() {
   getTv();
   getTvFrame();
 
-  console.log(w, h, tvframe);
+  // console.log(w, h, tvframe);
   if (w / h > 16 / 9) {
     tvframe.css({ 'width': w, 'height': w / 16 * 9 });
     $('.tv .screen').css({ 'left': '0px', 'width': w + 'px', 'height': w / 16 * 9 + 'px' });

@@ -4,22 +4,26 @@
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
 }
+
 html {
   width: 100%;
   height: 100%;
 }
+
 html body {
   width: 100%;
   height: 100%;
@@ -29,16 +33,20 @@ html body {
   background: #000;
   color: #ded4b9;
 }
+
 html body * {
   box-sizing: border-box;
 }
+
 html body .disabled {
   pointer-events: none;
 }
+
 html ::selection {
   background: #777;
   color: #777;
 }
+
 .rvk .rocks {
   position: absolute;
   top: 50%;
@@ -53,9 +61,11 @@ html ::selection {
   transition: left 0.75s cubic-bezier(0.75, 0, 0.25, 1);
   -webkit-transition: left 0.75s cubic-bezier(0.75, 0, 0.25, 1);
 }
+
 .rvk .rocks.on {
   left: 360px;
 }
+
 .rvk .rocks h2 {
   max-width: 765px;
   height: 3rem;
@@ -69,12 +79,14 @@ html ::selection {
   letter-spacing: 1px;
   text-align: left;
 }
+
 .rvk .rocks h2.show {
 
   opacity: 1;
   transition: opacity 3s 0s;
   -webkit-transition: opacity 3s 0s;
 }
+
 .rvk .rocks h1 {
   max-width: 765px;
   margin: 0 0 1rem;
@@ -88,11 +100,13 @@ html ::selection {
   text-transform: uppercase;
   text-align: left;
 }
+
 .rvk .rocks h1.show {
   opacity: 1;
   transition: opacity 3s 0s;
   -webkit-transition: opacity 3s 0s;
 }
+
 .rvk .rocks p {
   max-width: 632px;
   margin: 0 0 48px 9px;
@@ -103,11 +117,13 @@ html ::selection {
   letter-spacing: 0px;
   opacity: 0;
 }
+
 .rvk .rocks p.show {
   opacity: 1;
   transition: opacity 3s 1.5s;
   -webkit-transition: opacity 3s 1.5s;
 }
+
 .rvk .rocks button {
   display: inline-block;
   position: relative;
@@ -129,11 +145,13 @@ html ::selection {
   outline: none;
   cursor: pointer;
 }
+
 .rvk .rocks button.show {
   opacity: 1;
   transition: opacity 2s 2.5s, color 0.5s cubic-bezier(0.75, 0, 0.25, 1);
   -webkit-transition: opacity 2s 2.5s, color 0.5s cubic-bezier(0.75, 0, 0.25, 1);
 }
+
 .rvk .rocks button:before {
   content: '';
   position: absolute;
@@ -146,23 +164,29 @@ html ::selection {
   transition: width 0.5s cubic-bezier(0.75, 0, 0.25, 1);
   -webkit-transition: width 0.5s cubic-bezier(0.75, 0, 0.25, 1);
 }
+
 .rvk .rocks button:hover,
 .rvk .rocks button.on {
   color: #000;
 }
+
 .rvk .rocks button:hover:before,
 .rvk .rocks button.on:before {
   width: 100%;
 }
+
 .rvk .rocks button.on {
   pointer-events: none;
 }
+
 .rvk .rocks button:first-of-type {
   margin-left: 9px;
 }
+
 .rvk .rocks button:last-of-type {
   border-left: none;
 }
+
 .rvk .info {
   position: absolute;
   top: 0;
@@ -175,7 +199,8 @@ html ::selection {
   transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
   -webkit-transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
 }
-.rvk .info > i {
+
+.rvk .info>i {
   position: absolute;
   top: 0;
   left: 0;
@@ -189,14 +214,16 @@ html ::selection {
   transition: opacity 0.5s 1.2s;
   -webkit-transition: opacity 0.5s 1.2s;
 }
-.rvk .info > i span {
+
+.rvk .info>i span {
   position: relative;
   display: block;
   width: 18px;
   height: 18px;
 }
-.rvk .info > i span:before,
-.rvk .info > i span:after {
+
+.rvk .info>i span:before,
+.rvk .info>i span:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -205,15 +232,18 @@ html ::selection {
   height: 1px;
   background: #111;
 }
-.rvk .info > i span:before {
+
+.rvk .info>i span:before {
   transform: translate(-50%, -50%) rotate(45deg);
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
 }
-.rvk .info > i span:after {
+
+.rvk .info>i span:after {
   transform: translate(-50%, -50%) rotate(-45deg);
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
 }
-.rvk .info > div {
+
+.rvk .info>div {
   position: absolute;
   top: 150%;
   left: 0;
@@ -223,7 +253,8 @@ html ::selection {
   transition: top 0.75s cubic-bezier(0.75, 0, 0.25, 1);
   -webkit-transition: top 0.75s cubic-bezier(0.75, 0, 0.25, 1);
 }
-.rvk .info > div p {
+
+.rvk .info>div p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -231,10 +262,12 @@ html ::selection {
   letter-spacing: 0px;
   margin: 0 0 16px;
 }
-.rvk .info > div p strong {
+
+.rvk .info>div p strong {
   font-weight: 700;
 }
-.rvk .info > div h3 {
+
+.rvk .info>div h3 {
   margin: 18px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -242,19 +275,22 @@ html ::selection {
   line-height: 24px;
   letter-spacing: 0px;
 }
-.rvk .info > div a {
+
+.rvk .info>div a {
   position: relative;
   color: #000;
   text-decoration: none;
 }
-.rvk .info > div a i {
+
+.rvk .info>div a i {
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
   height: 1px;
 }
-.rvk .info > div a i:before {
+
+.rvk .info>div a i:before {
   content: '';
   display: block;
   position: absolute;
@@ -265,7 +301,8 @@ html ::selection {
   transition: width 0s, background 0.5s;
   -webkit-transition: width 0s, background 0.5s;
 }
-.rvk .info > div a i:after {
+
+.rvk .info>div a i:after {
   content: '';
   display: block;
   position: absolute;
@@ -277,29 +314,35 @@ html ::selection {
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
 }
-.rvk .info > div a:hover i:before {
+
+.rvk .info>div a:hover i:before {
   width: 100%;
   background: #000;
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
 }
-.rvk .info > div a:hover i:after {
+
+.rvk .info>div a:hover i:after {
   width: 100%;
   background: transparent;
   transition: background 0s;
   -webkit-transition: background 0s;
 }
-.rvk .info > div.on {
+
+.rvk .info>div.on {
   top: 50%;
   transition: top 1.25s cubic-bezier(0.75, 0, 0.25, 1);
   -webkit-transition: top 1.25s cubic-bezier(0.75, 0, 0.25, 1);
 }
+
 .rvk .info.on {
   left: 0;
 }
-.rvk .info.on > i {
+
+.rvk .info.on>i {
   opacity: 1;
 }
+
 .rvk .cover {
   position: absolute;
   top: 0;
@@ -312,12 +355,15 @@ html ::selection {
   transition: opacity 4s;
   -webkit-transition: opacity 4s;
 }
+
 .rvk .cover.on {
   opacity: 0.6;
 }
+
 .rvk .cover.off {
   display: none;
 }
+
 .rvk .tv {
   position: absolute;
   top: 0;
@@ -333,12 +379,14 @@ html ::selection {
   transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
   -webkit-transition: left 0.75s cubic-bezier(0.6, 0, 0.25, 1);
 }
+
 .rvk .tv.on {
   left: 360px;
   transition: left 2s;
   -webkit-transition: left 2s;
 
 }
+
 .rvk .tv .screen {
   position: absolute;
   top: 0;
@@ -349,28 +397,37 @@ html ::selection {
   transition: opacity 5s;
   -webkit-transition: opacity 5s;
 }
+
 .rvk .tv .screen.on {
   opacity: 1;
 }
+
 .rvk .tv .screen.off {
   display: none;
 }
+
 iframe {
-  display: block;       /* iframes are inline by default */
+  display: block;
+  /* iframes are inline by default */
   background: #000;
-  border: none;         /* Reset default border */
-  height: 120vh;        /* Viewport-relative units */
-  width: 100vw; 
-  top:-1vw;
+  border: none;
+  /* Reset default border */
+  height: 120vh;
+  /* Viewport-relative units */
+  width: 100vw;
+  top: -1vw;
   left: 0px;
   position: absolute;
 }
+
 @media (max-width: 1280px) {
   iframe {
     width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
     min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
     position: absolute;
     top: 0%;
     left: 0%;
@@ -385,13 +442,16 @@ iframe {
   .rvk .rocks {
     padding: 0 40px;
   }
+
   .rvk .rocks.on {
     left: 288px;
   }
+
   .rvk .rocks h2 {
     width: 100%;
     height: 8rem;
   }
+
   .rvk .rocks h1 {
     max-width: 620px;
     font-family: 'Oswald', sans-serif;
@@ -401,6 +461,7 @@ iframe {
     letter-spacing: -4px;
     margin: 0 0 20px;
   }
+
   .rvk .rocks p {
     max-width: 520px;
     margin: 0 0 25px 2px;
@@ -410,19 +471,23 @@ iframe {
     line-height: 1.9rem;
     letter-spacing: 0px;
   }
+
   .rvk .rocks button {
     height: 62px;
     padding: 0 32px;
     font-size: 16px;
   }
+
   .rvk .rocks button:first-child {
     margin-left: 7px;
   }
+
   .rvk .info {
     left: -288px;
     width: 288px;
   }
-  .rvk .info > div p {
+
+  .rvk .info>div p {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 0.85rem;
@@ -430,19 +495,23 @@ iframe {
     letter-spacing: 0px;
     margin: 0 0 12px;
   }
-  .rvk .info > div h3 {
+
+  .rvk .info>div h3 {
     margin: 14px 0;
     font-size: 19px;
   }
+
   .rvk .tv.on {
     left: 288px;
   }
 
   iframe {
     width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
     min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
     position: absolute;
     top: 0%;
     left: 0%;
@@ -451,6 +520,98 @@ iframe {
     background: #000;
   }
 }
+
+@media (max-width: 900px) and (max-height: 420px) {
+
+  .rvk .rocks.on {
+    left: 50%;
+  }
+
+  .rvk .rocks h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 4.6rem;
+    line-height: 4.6rem;
+    letter-spacing: -1px;
+  }
+
+  .rvk .rocks h2 {
+    width: 80%;
+    height: 4.5rem;
+  }
+
+  .rvk .rocks p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0px;
+  }
+
+  .rvk .info {
+    left: -248px;
+    width: 248px;
+  }
+
+  .rvk .info.on {
+    width: 50%;
+  }
+
+  .rvk .info>div.on {
+    top: 50%;
+  }
+
+  .rvk .info>div p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 0.80rem;
+    line-height: 1.4rem;
+    letter-spacing: 0px;
+    margin: 0 0 12px;
+  }
+
+  .rvk .info>div h3 {
+    margin: 8px 0;
+    font-size: 13px;
+  }
+
+  .rvk .tv.on {
+    left: 248px;
+  }
+
+  iframe {
+    width: 100vw;
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
+    visibility: visible;
+    background: #000;
+  }
+}
+
+@media (max-width: 745px) and (max-height: 365px) {
+
+  .rvk .rocks.on {
+    left: 60%;
+  }
+  .rvk .info.on {
+    width: 60%;
+  }
+  .rvk .info>div p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .rvk .rocks h2 {
+    width: 90%;
+  }
+}
+
 @media (max-width: 680px) {
   .rvk .rocks {
     max-width: inherit;
@@ -462,6 +623,7 @@ iframe {
     width: 100%;
     height: 8rem;
   }
+
   .rvk .rocks h1 {
     max-width: inherit;
     font-family: 'Oswald', sans-serif;
@@ -471,6 +633,7 @@ iframe {
     letter-spacing: -2px;
     margin-top: 6rem;
   }
+
   .rvk .rocks p {
     max-width: 75%;
     margin-bottom: 32px;
@@ -480,6 +643,7 @@ iframe {
     line-height: 1.4rem;
     letter-spacing: 0px;
   }
+
   .rvk .rocks button {
     height: 49px;
     padding: 0 25px;
@@ -488,17 +652,21 @@ iframe {
 
 
   .rvk .info.on {
-      width:100%;
+    width: 100%;
   }
-  .rvk .info > div.on {
+
+  .rvk .info>div.on {
     top: 50%;
 
   }
+
   iframe {
     width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    height: 56.25vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
     min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    min-width: 177.77vh;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
     position: absolute;
     top: 0%;
     left: 0%;
@@ -507,67 +675,24 @@ iframe {
     background: #000;
   }
 }
-@media (max-width: 900px) and (max-height: 420px) {
-  .rvk .rocks h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 4.6rem;
-    line-height: 4.6rem;
-    letter-spacing: -1px;
-  }
-  .rvk .rocks p {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    letter-spacing: 0px;
-  }
-  .rvk .info {
-    left: -248px;
-    width: 248px;
-  }
-  .rvk .info > div p {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 12.6px;
-    letter-spacing: 0px;
-    margin: 0 0 9px;
-  }
-  .rvk .info > div h3 {
-    margin: 8px 0;
-    font-size: 13px;
-  }
-  .rvk .tv.on {
-    left: 248px;
-  }
-  iframe {
-    width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* transform: translate(-50%, -50%); */
-    visibility: visible;
-    background: #000;
-  }
-}
+
 @media (max-width: 380px) {
   .rvk .rocks {
     min-width: 320px;
   }
+
   .rvk .rocks p {
     max-width: inherit;
   }
 
 }
+
 @media (max-width: 340px) {
   .rvk .rocks {
     padding: 0 20px;
   }
 }
+
 @media (max-width: 320px) and (max-height: 570px) {
   .rvk .rocks h1 {
     font-family: 'Oswald', sans-serif;
@@ -576,6 +701,7 @@ iframe {
     line-height: 47.6px;
     letter-spacing: -1px;
   }
+
   .rvk .rocks p {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -583,11 +709,13 @@ iframe {
     line-height: 15.4px;
     letter-spacing: 0px;
   }
+
   .rvk .info {
     left: -248px;
     width: 248px;
   }
-  .rvk .info > div p {
+
+  .rvk .info>div p {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 9px;
@@ -595,10 +723,12 @@ iframe {
     letter-spacing: 0px;
     margin: 0 0 9px;
   }
-  .rvk .info > div h3 {
+
+  .rvk .info>div h3 {
     margin: 8px 0;
     font-size: 13px;
   }
+
   .rvk .tv.on {
     left: 248px;
   }
