@@ -168,6 +168,7 @@
     </script>
 
   <!-- CSS -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -175,22 +176,24 @@
 </head>
 
 <body>
+
   <!-- partial:index.partial.html -->
   <div class="rvk">
+    <div class="button-strip">
+      <button class="clang on">Español</button><button class="clang">English</button>
+    </div>
     <div class="rocks">
-      <h1>Hola, soy Leo</h1>
-      <h2>¿Quieres diseño de soluciones con lógica, creatividad y a tiempo?</h2>
-      <p>App Web, Móvil, AR, VR, AI, ML, Blockchain, te puedo ayudar a aprovechar las tendencias y tecnologías
+      <h1 class="lang" data-ref="title">Hola, soy Leo</h1>
+      <h2 class="lang" data-ref="mess1">¿Quieres diseño de soluciones con lógica, creatividad y a tiempo?</h2>
+      <p class="lang" data-ref="mess2">App Web, Móvil, AR, VR, AI, ML, Blockchain, te puedo ayudar a aprovechar las
+        tendencias y tecnologías
         emergentes para obtener resultados y experiencia únicos.</p>
-      <button>Explora</button><button>Hablemos</button>
+      <button class="menu lang" data-ref="about">Explora</button><button class="menu lang"
+        data-ref="talk">Hablemos</button>
     </div>
     <div class="info">
       <i><span></span></i>
       <div class="about-us">
-
-
-
-
         <p>Hace más de <strong>14 años</strong> comencé con el desarrollo de proyectos online que me ha llevado a
           adquirir experiencia en una amplia gama de disciplinas de diseño y desarrollo para diversas plataformas,
           lenguajes y desafíos.</p>
@@ -200,18 +203,28 @@
         </p>
 
         <p><strong>¿QUIERES SABER SI PODEMOS HACER UN PROYECTO JUNTOS?</strong></p>
-        <strong>VAMOS</strong>
+        <ul class="icons">
+          <li><a target="_blank" rel="noopener" href="./assets/docs/cv.pdf" class="text-icon">CV</a></li>
+        </ul>
       </div>
       <div class="contact-us">
         <h3>¡Hagamos un nuevo proyecto juntos!</h3>
-          <p>Estoy buscando oportunidades para colaborar con empresas / partners / individuos, no solo trabajar para
-            ellos.</p>
-          <p>Quiero llevar mi experiencia colectiva en diseño y desarrollo a la mesa donde podamos trabajar juntos para
-            resolver problemas comerciales reales de una manera que optimice toda nuestra experiencia y conocimiento
-            respectivos.</p>
-          <p>Te puedes <strong>contactar</strong> via:</p>
-          <p><i><a href="mailto:lespinoz@brainmunity.com">lespinoz@brainmunity.com</a></i></p>
-          <p><i></i><a href="https://www.linkedin.com/in/lespinozdev/">Linkedin</a></i></p>
+        <p>Estoy buscando oportunidades para colaborar con empresas / partners / individuos, no solo trabajar para
+          ellos.</p>
+        <p>Quiero llevar mi experiencia colectiva en diseño y desarrollo a la mesa donde podamos trabajar juntos para
+          resolver problemas comerciales reales de una manera que optimice toda nuestra experiencia y conocimiento
+          respectivos.</p>
+        <p>Te puedes <strong>contactar</strong> via:</p>
+        <ul class="icons">
+          <li><a target="_blank" rel="noopener" href="mailto:lespinoz@brainmunity.com" class="text-icon">@</a></li>
+          <li><a target="_blank" rel="noopener" href="https://github.com/leoespinoza"
+              class="fa fa-github">leoespinoza</a></li>
+
+          <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/lespinozdev/"
+              class="fa fa-linkedin">LinkedIn</a></li>
+
+        </ul>
+
       </div>
     </div>
     <div class="cover"></div>
@@ -224,7 +237,7 @@
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
 
-  <script  src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 

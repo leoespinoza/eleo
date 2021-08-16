@@ -1,5 +1,6 @@
 let tv, tvframe;
 let mobCheck = true;
+let lang="es";
 var optionsTv = {
   id: 384372134,
   width: '100vw',
@@ -11,6 +12,23 @@ var optionsTv = {
   title: false,
   fullscreen: true
 };
+let arrLang = [{
+  ref: "title", 
+  es: "Hola, soy Leo", en: "Hi, im Leo",
+},{
+  ref: "talk", 
+  es: "Hablemos", en: "let's talk",
+},{
+  ref: "about", 
+  es: "explora", en: "explore",
+},{
+  ref: "mess1", 
+  es: "¿Quieres diseño de soluciones con lógica, creatividad y a tiempo?", en: "Do you want to design solutions with logic, creativity and on time?",
+},{
+  ref: "mess2", 
+  es: "App Web, Móvil, AR, VR, AI, ML, Blockchain, te puedo ayudar a aprovechar las tendencias y tecnologías emergentes para obtener resultados y experiencia únicos.", en: "Web App, Mobile, AR, VR, AI, ML, Blockchain, I can help you leverage emerging trends and technologies for unique results and expertise.",
+}];
+
 let arrTv = [{
   id: 384372134, time: "15s",
   es: "Chile | Atacama Desert", en: "Chile | Atacama Desert",
@@ -27,6 +45,7 @@ let arrTv = [{
 
 (function supportVideo() {
   let ua = navigator.userAgent;
+
   let checker = {
     iphone: ua.match(/(iPhone|iPod|iPad)/),
     blackberry: ua.match(/BlackBerry/),
@@ -64,8 +83,11 @@ function setVideo() {
   tv.setCurrentTime(video.time);
 }
 function changeLang() {
-  $(".contenido").each(function (index) {
-    $(this).text($(this).data(lang));
+  $(".lang").each(function (index) {
+    let opt=$(this).data("ref");
+    let res=arrLang.filter(x => x.ref === opt);
+    if (res.length>0)
+    $(this).text(res[0][lang]);
   });
 }
 
@@ -95,19 +117,29 @@ $(document).on('ready', function () {
     $('.tv .screen, .cover').addClass('off');
   }
 
-  $('button').on('click', function (e) {
+  $('button.menu').on('click', function (e) {
     e.stopPropagation();
-    $('button').removeClass('on');
+    $('button.menu').removeClass('on');
     $(this).toggleClass('on');
-    $('.rocks, .info, .tv').addClass('on');
+    $('.button-strip, .rocks, .info, .tv, .vc-toggle-container').addClass('on');
+    $('.button-strip').children().removeClass('show');
   });
 
-  $('button:first-of-type').on('click', function () {
+  $('button.clang').on('click', function (e) {
+    e.stopPropagation();
+    $('button.clang').removeClass('on');
+    $(this).toggleClass('on');
+    lang=lang=="es"?"en":"es";
+    console.log(lang);
+    changeLang();
+  });
+
+  $('button.menu:first-of-type').on('click', function () {
     $('.info > div').removeClass('on');
     $('.about-us').addClass('on');
   });
 
-  $('button:last-of-type').on('click', function () {
+  $('button.menu:last-of-type').on('click', function () {
     $('.info > div').removeClass('on');
     $('.contact-us').addClass('on');
   });
@@ -117,7 +149,8 @@ $(document).on('ready', function () {
   });
 
   $('html, .info > i').on('click', function () {
-    $('button, .rocks, .info, .tv, .about-us, .contact-us').removeClass('on');
+    $('button.menu,.rocks, .info, .tv, .about-us, .contact-us').removeClass('on');
+    $('.button-strip').removeClass('on').children().addClass('show');
   });
 
   setVideo();
@@ -141,6 +174,7 @@ $(window)
   .on('load', function () {
     vidRescale();
     $('.rocks').children().addClass('show');
+    $('.button-strip').children().addClass('show');
   })
   .on('resize', function () {
     vidRescale();
